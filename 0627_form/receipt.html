@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title> 영수증 표 만들기</title>
+    <style>
+         table, table * {border: 2px solid black;}
+    </style>
+</head>
+<body>
+    <table><!--6행4열-->
+        <thead>
+            <tr>
+                <th scope="col">상품(코드)</th>
+                <th scope="col">단가</th>
+                <th scope="col">수량</th>
+                <th scope="col">금액</th>
+            </tr>
+        </thead>
+        <tfoot><!-- 결과행그룹 -->
+            <tr><!-- 행 -->
+                <!-- 다른 행 기준 총 4개의 열이 결과행에선 1개의 열이 되므로 총액 열을 3칸 차지하도록 colspan="3" 적용해서 3+1=4 총 개수와 맞도록 설정 -->
+                <th scope="row" colspan="3"><em>판매총액:</em></th>
+                <!-- <td></td> -->
+                <!-- <td></td> -->
+                <td><em>10,200</em></td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <th scope="row">
+                    001 
+                    <span>굿모닝 우유 900ML</span>
+                </th>
+                <td>1,350</td>
+                <td>1</td>
+                <td>1,350</td>
+            </tr>
+            <tr>
+                <th scope="row">
+                    002
+                    <span>양파</span>
+                </th>
+                <td>3,300</td>
+                <td>2</td>
+                <td>6,600</td>
+            <tr>
+                <th scope="row">
+                    003
+                    <span>무</span>
+                </th>
+                <td>500</td>
+                <td>3</td>
+                <td>1,500</td>
+            </tr>
+            <tr>
+                <th scope="row">
+                    004
+                    <span>깻잎</span>
+                </th>
+                <td>750</td>
+                <td>1</td>
+                <td>750</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

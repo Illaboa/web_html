@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>Document</title>
+</head>
+<body>
+    <h1>form 입력, 선택 컨트롤하는 양식</h1>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>로그인양식</legend><!-- CSS에선 숨김대상 -->
+            <!-- 컨트롤 요소 위치(blck) -->
+            <ul>
+                <li><input type="text" name="user_name" placeholder="이름"></li>
+                <li><input type="text" name="user_id" placeholder="아이디"></li><!-- 정보 데이터 구분을 위해 name 태그 사용>-->
+                <li><input type="password" name="user_pw" placeholder="비밀번호"></li>
+                <li>
+                    성별 :
+                    <label for="male">남</label>
+                    <input type="radio" name="gender" value="male" id="male">
+                    <label for="female">여</label>
+                    <input type="radio" name="gender" value="female" id="female">
+                    <!-- 하나의 그룹(name)으로 묶어 인식 된 상태에선 체크 박스 중 하나만 체크 적용이 됨 -->
+                    <!-- 이 radio를 선택하면 보내지는 value값은 male 혹은 female로 전송된다 라는 의미에 value 태그도 넣어주기-->
+                </li>
+                <li>
+                    정보 저장 동의 :
+                    <label>
+                        동의함
+                        <input type="radio" name="agree_g" value="agree" id="agree">
+                    </label>
+                    <!-- for 태그를 부모로 엮을 경우 이런식으로도 작성 가능 -->
+                    <label for="no">동의안함</label>
+                    <input type="radio" name="agree_g" value="not_agree" id="no">
+                </li>
+                <li>
+                    관심사(2개 이상 선택하세요)
+                    <label for="hobby">영화</label>
+                    <input type="checkbox" name="hobby" value="movie" id="movie">
+                    <label for="hobby">운동</label>
+                    <input type="checkbox" name="hobby" value="exercise" id="exercise">
+                    <label for="hobby">독서</label>
+                    <input type="checkbox" name="hobby" value="book" id="book">
+                </li>
+                <li>
+                    첨부파일 <input type="file">
+                </li>
+            </ul>
+            <!-- 여기까지가 본문이니 ul밖에서 기입 -->
+            <p>
+                <button type="submit">가입</button>
+                <button type="reset">가입취소</button>
+            </p>
+        </fieldset>
+    </form>
+    <hr>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>로그인양식</legend>
+            <ul>
+                <li><input type="text" name="user_name" placeholder="이름"></li>
+                <li><input type="text"  name="user_id" placeholder="아이디"></li>
+                <li><input type="text" name ="user_pw" placeholder="비밀번호"></li>
+                <li>
+                    성별 :
+                    <label>
+                        남
+                        <input type="radio" name="gender" value="male" id="male_2"> 
+                    </label>
+                    <label>
+                        여
+                        <input type="radio" name="gender" value="female" id="female_2">
+                    </label>
+                </li>
+                <li>
+                    정보 저장 동의 :
+                    <label>
+                        동의함
+                        <input type="radio" name="agree_g" value="agree_2" id="agree_2">
+                    </label>
+                    <label>
+                        동의안함
+                        <input type="radio" name="agree_g" value="not_agree_2" id="not_agree_2">
+                    </label>
+                </li>
+                <li>
+                    관심사(2개 이상 선택 필요)
+                    <label>
+                        영화
+                        <input type="checkbox" name="hobby" value="movie_2" id="movie_2"> 
+                    </label>
+                    <label>
+                        운동
+                        <input type="checkbox" name="hobby" value="exercise_2" id="exercise_2">
+                    </label>
+                    <label>
+                        독서
+                        <input type="checkbox" name="hobby" value="book_2" id="book_2">
+                    </label>
+                </li>
+                <li>
+                    첨부파일<input type="file">
+                </li>
+            </ul>
+            <p>
+                <button type="submit">가입</button>
+                <button type="reset">가입취소</button>
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
