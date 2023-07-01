@@ -1,0 +1,51 @@
+/*header*/
+header {background-color: lightcoral;}
+header h1 {}
+header h1 a {}
+header h1 a img{}
+/*header-nav*/
+header nav {background-color: lightsteelblue;}
+header nav ul {}
+header nav ul li {}
+header nav ul li a {}
+header .lnb {}
+header .lnb li {}
+header .lnb li a {}
+/*main*/
+main {background-color: antiquewhite;}
+main .c_bg {background-color: #f1f1f1;}
+main .c_bg .breadcrumbs {background-color: azure;}
+main .c_bg .breadcrumbs a {}
+main .c_bg .breadcrumbs em {background-color: blueviolet;}
+/*main-contents1 경영이념*/
+main .contents1 {background-color: cornflowerblue;}
+main .contents1 h1 {}
+main .contents1 p {}
+/*main-contents2 전통*/
+main .c2_bg {background-color: grey;}
+main .c2_bg .contents2 {}
+main .c2_bg .contents2 p{}
+/*main-contents3 비전*/
+main .contents3 {background-color: chocolate;}
+main .contents3 h2 {}
+main .contents3 h2+p {}
+/*main-contnets4*/
+main .c4_bg {background-color: grey;}
+main .c4_bg .contents4 {}
+main .c4_bg .contents4 h2 {}
+main .c4_bg .contents4 ul {}
+main .c4_bg .contents4 ul li {}
+main .c4_bg .contents4 ul li h3 {}
+main .c4_bg .contents4 ul li h3 p {}
+/*footer 주소 및 개인방침*/
+footer {}
+footer .f_top {background-color: darkkhaki;}
+footer .f_top .fnb {background-color: darkseagreen;}
+footer .f_top .fnb li {}
+footer .f_top .fnb li a {}
+footer .site {background-color: darksalmon;}
+footer .site li {}
+footer .site li a {}
+footer .f_btm {background-color: forestgreen;}
+footer .f_btm address {}
+.f_btm address p {}
