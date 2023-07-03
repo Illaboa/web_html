@@ -9,8 +9,9 @@ table,thead,tbody,tfoot,tr,th,td,ul,ol,li,dl,dt,dd,
 form,fieldset,legend,input,section,option,button,label,textarea {
     margin:0; padding: 0; line-height:1.0;
     font-size: 16px; font-style:normal; font-weight:normal;
-    text-align:left; text-decoration:none;
+    text-decoration:none;
 }
+th{text-align: left;}
 table,tr,th,td {border-collapse:collapse;}
 ul,ol,li {list-style:none;}/*목록 디자인 리셋(옆에 붙는● 같은 거)*/
 a {color: #000;}
