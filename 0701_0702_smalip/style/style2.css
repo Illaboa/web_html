@@ -1,0 +1,42 @@
+header {
+    background-color: antiquewhite;
+    width: 1200px; height: 92px;
+    margin: 0 auto;
+}
+header h1 {
+    width: 60px; height: 70px;
+    float: left;
+    margin: 11px 0 0 20px;
+}
+header h1 a img{width: 100%;}
+header nav {
+    background-color: rgb(202, 150, 86);
+    padding: 39px 0 0 314px;
+    float:left;
+}
+header nav ul {background-color: aquamarine;}
+header nav ul li{
+    background-color: rgb(238, 255, 255);
+    float:left;
+}
+header nav ul li a{
+    padding-left: 40px;
+    font-size: 1.2rem;
+}
+header nav ul li:first-child a {padding-left: 0;}
+header nav ul .active{color:#36b4e5;}
+header .lnb {
+    background-color: cornflowerblue;
+    margin: 39px 20px 0 0;
+    float: right;
+}
+header .lnb li {
+    float: left;
+    margin-right: 20px;
+}
+header .lnb li a {font-size: 1.2rem;}
+header .lnb li span {
+    background-color: #aaa;
+    width: 1px; height: 13px;
+    display: block; margin-top: 3px;
+}

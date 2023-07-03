@@ -1,0 +1,173 @@
+header{
+    background-color: lightcoral;
+    width:1200px; height: 92px;
+    margin: 0 auto; /*가운데 정렬*/
+}
+header h1 {
+    width: 60px; height: 70px;/*img부모 px*/
+    float:left;
+    margin: 11px 0 0 20px;
+    }
+header h1 a {}
+header h1 a img{width:100%}/*img 태그는 인라인요소지만 px크기를 절대값으로 가지기 때문에 부모요소의 크기가 변경되도 자동으로 따로오지 않아 width:100% 속성으로 상대값으로 변경하여 부모의 px을 상대적으로 인식하게 하는 경우가 많음*/
+/*header-nav*/
+header nav {
+    background-color: lightsteelblue;
+    margin:39px 0 0 234px;
+    float:left;
+}
+header nav ul {}
+header nav ul li {
+    background-color: rgb(215, 252, 255);
+    float:left;
+}
+header nav ul li a {
+    padding-left: 40px;
+    font-size: 1.2rem;
+}
+header nav ul li:first-child a {padding-left:0;}
+/*활성화 페이지 기준 active class 선택자 작성위치*/
+header nav ul .active {color:#36b4e5}
+
+header .lnb {
+    background-color: rgb(190, 255, 190);
+    float: right; 
+    margin: 39px 20px 0 0; 
+}
+header .lnb li {
+    float:left; /*lnb부모 기준 위쪽을 기준으로해서 left로 기입*/
+    margin-right: 20px;
+}
+/*모든 li에 반복적으로 들어간 margin 또는 padding값에서 마지막 여백값만 빼는 방법*/
+header .lnb li:last-chlid {margin-right:0;}
+header .lnb li a {
+    font-size: 1.2rem;}
+header .lnb li span {
+    width:1px; height:13px;
+    background-color: #aaa;
+    display:block; margin-top:3px; 
+    /*선이 너무 위로 올라갔으니 위쪽에 여백을 주어 정렬*/
+    /*span태그에 내용을 기입 할 수 없으니(선 이라서) 잠시 인라인 태그인 span을 블록으로 선언*/
+}
+/*main*/
+main {background-color: antiquewhite;}
+main .c_bg {
+    background-color:#eaf17f;
+    border:1px solid #aaa;
+    border-left:0; border-right:0;
+    /*방법2*/
+    /*border-top:1px solid #aaa;
+    border-bottom:1px solid #aaa;*/
+    /*2 방법 선택시 고칠 때 태그를 2번이나 수정해야한다는 단점이 있으니 위와 같은 방법으로 채용*/
+}
+main .c_bg .breadcrumbs {
+    background-color: aquamarine;
+    width: 1200px; height: 58px;
+    margin: 0 auto; text-align:right;
+    padding: 23px 20px 0 0;
+    /*정렬대상이 모두 인라인이고 한 방향 수평 정렬일 경우 정렬대상의 부모요소한테 text-align을 사용함*/
+    
+}
+main .c_bg .breadcrumbs a {}
+main .c_bg .breadcrumbs em {background-color: rgb(231, 206, 255); font-weight: 700;}
+/*main-contents1 경영이념*/
+main .contents1 {
+    background-color: cornflowerblue;
+    width:1200px; padding:70px 0; 
+    margin: 0 auto; text-align: center;
+
+}
+main .contents1 h1 {
+    font-size: 2.074rem;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    /*margin-bottom:40px*/
+    margin-bottom: 40px;
+}
+main .contents1 p {
+    font-size: 1.2rem;
+    letter-spacing: -0.02;
+}
+/*main-contents2 전통*/
+main .c2_bg {
+    background-color: #e9d7d7;
+}
+main .c2_bg .contents2 {
+    background-color:#F5F5F5;
+    width: 1200px; padding: 70px 0; 
+    margin: 0 auto; text-align: center;
+}
+    
+main .c2_bg .contents2 p{
+    font-size: 1.2rem; 
+    letter-spacing: -0.02em; line-height: 35px;
+}
+/*main-contents3 비전*/
+main .contents3 {
+    background-color: rgb(240, 197, 167);
+    width: 1200px; padding: 70px 0;
+    margin: 0 auto; text-align: center;
+}
+main .contents3 h2 {
+    margin-bottom:50px;
+    font-size: 2.074rem;
+    font-weight: 500;
+    letter-spacing: -0.02em; 
+    color:#36b4e5
+}
+main .contents3 h2+p {
+    font-size: 1.782rem; 
+    letter-spacing: -0.02; 
+    line-height: 45px;
+}
+main .contents3 p:nth-child(2) {margin-bottom: 50px;} /*nth: 수열*/
+/*main-contnets4*/
+main .c4_bg {background-color: #f1f1f1;}
+main .c4_bg .contents4 {}
+main .c4_bg .contents4 h2 {}
+main .c4_bg .contents4 ul {}
+main .c4_bg .contents4 ul li {}
+main .c4_bg .contents4 ul li h3 {}
+main .c4_bg .contents4 ul li h3 p {}
+/*footer 주소 및 개인방침*/
+footer {background-color: brown;}
+footer .f_top {
+    background-color: darkkhaki;
+    width: 1200px; height: 60px; margin: 0 auto;
+    padding-top: 13px;
+}
+footer .f_top .fnb {
+    background-color: darkseagreen;
+    float:left;
+    margin-top: 10px;
+}
+footer .f_top .fnb li {
+    float:left; 
+    margin-right: 30px;
+}
+footer .f_top .fnb li:last-child {margin-right: 0;}
+footer .f_top .fnb li a {}
+footer .f_top .site {
+    background-color: darksalmon;
+}
+footer .f_top .site li {
+    float:right; border: 1px solid #d9d9d9;
+    margin-right: 10px;
+}
+footer .f_top .site li:last-child {margin-right:0;}
+footer .f_top .site li a {
+    padding: 13px 20px;
+    display: block;
+}
+footer .f_btm {
+    background-color: rgb(115, 145, 84);
+    width:1200px; margin: 0 auto;
+    padding: 70px 0;
+}
+footer .f_btm address {
+    margin-bottom: 50px; line-height: 40px;
+    font-size: 1.2rem; letter-spacing: -0.02em;
+}
+.f_btm address p {
+
+}
