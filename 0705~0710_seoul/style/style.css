@@ -1,0 +1,407 @@
+/*popup*/
+#top {
+    position: fixed; right: 50px; bottom: 50px;
+    width:34px; height: 34px;
+}
+#top img {width:100%}
+/* all layout */
+header,
+main .visual
+main .service
+main .bnr_bg .bnr,
+main .board, 
+main .field_info,
+main .news,
+footer {
+    width:1152px; margin: 0 auto;
+}
+/* header */
+header {}
+/* header-h top */
+header #h_top {
+    background-color: yellow;
+    height: 48px;
+}
+header #h_top .left {
+    background-color: lime;
+    float:left;
+}
+header #h_top .left h1 {
+    float:left; padding-top: 10px;
+    width: 110px; height: 28px;
+}
+header #h_top .left h1 a {}
+header #h_top .left h1 a img {widht:100%}
+header #h_top .left nav {float:left;}
+header #h_top .left nav ul {}
+header #h_top .left nav ul li {
+    float: left; margin-left:20px;
+    /*부모따라서 정렬 배치니 float기입*/
+    /*그냥 margin이라 써버리면 그 옆의 li도 left 20값이 포함되었다고 인식이 되기때문에 (그럼 합해 40px) 주고자 하는 방향을 꼭 넣기*/
+}
+header #h_top .left nav ul li a {
+    line-height: 48px;
+    letter-spacing: -0.02em;
+}
+header #h_top .right {
+    background-color: pink;
+    float:right;
+}
+header #h_top .right li {float: left; margin-left: 20px;}
+header #h_top .right li:first-child {margin-left:0;}
+/*로그인 창 맨 옆에 여백(필요없는 부분)이 생겼으니 따로 수열선택자를 만들어서 없애주기*/
+header #h_top .right li a {line-height: 48px; letter-spacing: -0.02em;}
+/* header-h btm */
+header #h_btm {
+    background-color: burlywood;
+    float:left;
+    width: 1152px; height: 119px;
+}
+header #h_btm h1 {
+    width: 150px; height: 28px;
+    float:left; margin-top:45px;
+}
+header #h_btm h1 a {}
+header #h_btm h1 a img {width:100%}
+header #h_btm #search_frm {
+    background-color: cornsilk;
+    float:left; 
+    width: 369px; height: 46px;
+    border:2px solid #1e6cb3;
+    padding: 10px 20px 0;
+    margin:36px 0 0 230px;
+}
+header #h_btm #search_frm fieldset {border:0;}/*기존의 검색창은 border의 선 처리 되어있는거니 없애려면 속성 추가해 0으로 기입*/
+header #h_btm #search_frm fieldset legend {display: none;}
+header #h_btm #search_frm fieldset input {
+    float: left;
+    width:calc(100% - 20px);
+}
+header #h_btm #search_frm fieldset input::placeholder {letter-spacing: -0.02em; color: #1e6cb3;}
+/*placeholder 글짜 꾸미는 선택자*/
+header #h_btm #search_frm fieldset #search_btn{
+    border:0; background-color: none;
+    float: right; 
+    width: 20px; height: 20px;
+    cursor: pointer;
+}
+header #h_btm #search_frm fieldset #search_btn img {width:100%}
+header #h_btm .right {
+    background-color: darkseagreen;
+    float: right; margin-top: 18px;
+    width: 172px; height: 106px;
+    margin-top: 6.5px;
+}
+header #h_btm .right #langfrm {
+    text-align:right; /*인라인 태그이니 text-align으로 정렬*/
+}
+header #h_btm .right #langfrm fieldset {
+    border: 0; margin-left:10px;
+}
+header #h_btm .right #langfrm fieldset legend {display: none;}
+header #h_btm .right #langfrm fieldset select {
+    width:84px; padding:5px 0;
+    font-size: 0.813rem; letter-spacing: -0.02em;
+    border: 1px solid #1e6cb3;
+}
+header #h_btm .right #langfrm fieldset select option {}
+header #h_btm .right #langfrm fieldset #lang_btn {
+    width: 30px; height: 29px;
+    background-color: #1e6cb3; color: #fff;
+    border: 0; cursor: pointer;
+}
+header #h_btm .right .weather {}
+header #h_btm .right .weather .current_weather {}
+header #h_btm .right .weather .current_weather em {
+    font-size: 2.074rem; font-weight: 600; letter-spacing: -0.02em;
+}
+header #h_btm .right .weather .current_dust {
+    font-size: 0.813rem; letter-spacing: -0.02em;
+}
+/* main */
+main {}
+/* main-1광고배너 */
+main .visual {
+    background-color: cadetblue;
+    width: 1152px; height: 350px;
+    margin: 0 auto; overflow: hidden;
+}
+main .visual .left {
+    position: relative; /* 겹치는 대상 부모 기준 */
+    width: 770px; height: 350px; float: left;
+}
+main .visual .left img {}
+main .visual .left .close {
+    letter-spacing: -0.02rem; font-weight: 500;
+    padding:10px; border-radius: 5px;
+    background-color: #1e6cb3; color: #fff;
+    position: absolute; /*겹치는 대상(왼쪽 배너 사진과 겹침)*/
+    right: 10px; bottom: 10px;
+}
+main .visual .right {
+    background-color: burlywood;
+    width: 360px; float: right;
+}
+main .visual .right .covid {
+    display: block;
+    width:360px; height:230px;
+    position: relative;
+}
+main .visual .right .covid span {
+    color: #fff;
+    position: absolute;
+}
+main .visual .right .covid .date {right:22px; top:19px;}
+main .visual .right .covid .data1 {top: 79px; left: 82px;}
+main .visual .right .covid .data2 {top: 79px; right: 87px;}
+main .visual .right .covid .data3 {bottom: 53px; left: 59px;}
+main .visual .right .covid .data4 {bottom: 53px; right: 162px;}
+main .visual .right .covid .data5 {bottom: 53px; right: 53px;}
+main .visual .right .covid img {width: 100%;}
+main .visual .right .traffic {width: 360px; height: 110px; margin-top: 10px;}
+main .visual .right .traffic img {width: 100%; padding-top:10px;}
+/* 주요서비스~새소식 제목 디자인 그룹(공통 태그들 묶기) */
+/* 정리 후 */
+main section .title {
+    background-color: burlywood;
+    padding: 50px 0 10px;
+    border-bottom: 1px solid #aaa;
+    overflow: hidden; /* float의 오류 처리하는 기능 (현 시점 제목들이 겹쳐서 씀)*/
+}
+main section .title h2 {
+    font-size: 1.44rem; font-weight: 500;
+    letter-spacing: -0.02em;
+    float:left;
+}
+main section .title .site {
+    float: right;
+    border:1px solid #aaa; padding: 10px;
+}
+main section .title .more {float: right;}
+main section .title .more i{font-size: 27px;}
+/* 정리 전 */
+/* main .service .title {}
+main .service .title h2 {}
+main .service .title .site {}
+main .board .event .title {}
+main .board .event .title h2 {}
+main .board .event .title .more {}
+main .board .festival .title {}
+main .board .festival .title h2 {}
+main .board .festival .title .more {}
+main .board .service .title {}
+main .board .service .title h2 {}
+main .field_info .title {}
+main .field_info .title h2 {}
+main .news .title {}
+main .news .title h2 {}
+main .news .title .more {} */
+/* main-2주요서비스 */
+main .service {
+    width: 1152px; height: 231px;
+    margin: 0 auto;
+}
+main .service .title {border: 0;}
+main .service .title h2 {}
+main .service .title .site {}
+main .service .contents {
+    padding: 20px; overflow: hidden;
+}
+main .service .contents a {
+    float: left; width: 9.09%; /*100/11(100%에서 a의 개수(11개)를 나눈 상대값 기입)*/
+    text-align: center;
+}
+main .service .contents a img {}
+main .service .contents a span {
+    display: block;
+    font-size: 0.833rem; letter-spacing: -0.02em;
+}
+/* main-3배너 */
+main .bnr_bg {
+    background-color:#eff4f8;
+    padding:50px 0;
+    overflow: hidden;
+    margin: 0 auto;
+}
+main .bnr_bg .bnr {
+    background-color: #eff4f8;
+    width: 1152px; height: 70px;
+    float: left;
+    
+}
+main .bnr_bg .bnr a {
+}
+main .bnr_bg .bnr a img {}
+/* main-4게시판 */
+main .board {overflow: hidden;}
+/* main-4게시판 그룹 모음*/
+main .board > div {
+    width: calc(33.33% - 22px);
+    float:left;
+    /* margin-right:22px; */
+}
+main .board .event{}
+main .board .festival {margin: 0 22px;}
+main .board .service {width:33.33%}
+/*main-4게시판 카테고리*/
+main /.board div .contents a .administrative {color: #028AB6;}
+main /.board div .contents a .environment {color: #599100;}
+main /.board div .contents a .welfare {color: #D76000;}
+main /.board div .contents a .housing {color: #C35C3C;}
+main /.board div .contents a .economy {color: #9B64D3;}
+main /.board div .contents a .culture {color: #069363;}
+/*main-게시판 카테고리, 내용 모음*/
+main .board .event .contents,
+main .board .festival .contents {margin-top: 17px;}
+main .board .event .contents a,
+main .board .festival .contents a {
+    display: block; margin-bottom: 25px;
+    overflow: hidden;
+}
+main .board .event .contents a:last-child,
+main .board .festival .contents a:last-child{margin-bottom: 0;}
+main .board .event .contents a span,
+main .board .festival .contents a span {}
+main .board .event .contents a, span:first-child,
+main .board .festival .contents a span:first-child {
+    margin-right: 10px; float: left;}
+main .board .event .contents a span:last-child,
+main .board .festival .contents a span:last-child {
+    white-space: nowrap; /* 줄바꿈이 걸리지 않는 명령어 */
+    text-overflow: ellipsis; /*말줄임설정*/
+    overflow: hidden;
+    background-color: aliceblue;
+    float: right; width:85%;
+}
+/* main-4게시판 개별내용 */
+main .board .event .title {}
+main .board .event .title .more {}
+main .board .event .contents {}
+main .board .event .contents a {}
+main .board .event .contents a span {}
+main .board .event .contents a :first-child {
+}
+main .board .event .contents a :last-child {
+}
+main .board .event .contents a .administrative {color: #028AB6;}
+main .board .event .contents a .environment {color: #599100;}
+main .board .event .contents a .welfare {color: #D76000;}
+main .board .event .contents a .housing {color: #C35C3C;}
+main .board .event .contents a .culture {color: #069363;}
+main .board .festival .title {}
+main .board .festival .title h2 {}
+main .board .festival .title .more {}
+main .board .festival .contents {}
+main .board .festival .contents a {}
+main .board .festival .contents a span {}
+main .board .festival .contents a span:first-child {}
+main .board .festival .contents a span:last-child {}
+main .board .festival .contents a .environment {color: #599100;}
+main .board .festival .contents a .economy {color: #9B64D3;}
+main .board .festival .contents a .culture {color: #069363;}
+main .board .service .title {}
+main .board .service .title h2 {}
+main .board .service .contents {
+    background-color: #eff4f8;
+    overflow: hidden; padding: 13px;
+}
+main .board .service .contents a {
+    float:left; width: 50%; text-align: left;
+    margin-bottom: 25px;
+}
+main .board .service .contents a:nth-last-child(2)
+main .board .service .contents a:last-child {
+    margin-bottom: 0;
+}
+/* main-5분야정보 */
+main .field_info {}
+main .field_info .title {}
+main .field_info .title h2 {}
+main .field_info .contents {
+    overflow: hidden;
+    padding: 20px 40px;
+}
+main .field_info .contents a {
+    float: left;
+    text-align: center;
+    width: 12.5%; /*100/8*/
+}
+main .field_info .contents a img {}
+main .field_info .contents a span {
+    display: block; letter-spacing: -0.02em;
+}
+/* main-6새소식 */
+main .news {}
+main .news .title {}
+main .news .title h2 {}
+main .news .title .more {}
+main .news .contents {
+    overflow: hidden;
+}
+main .news .contents a {
+    width:25%; float:left;
+}
+main .news .contents a img {}
+main .news .contents a span {
+    margin-bottom: 16px;
+    line-height: 26px; letter-spacing: -0.06em;
+}
+/* footer-f top */
+footer {}
+footer .top {
+    border:1px solid #aaa;
+    border-left:0; border-right: 0;
+    overflow: hidden;
+}
+footer .top .left {float: left;}
+footer .top .left a {margin-right: 20px; letter-spacing: -0.02em;}
+footer .top .left a:last-child {margin-right: 0;}
+footer .top .right {float: right;}
+footer .top .right a {margin-right: 15px;}
+footer .top .right a:first-child {
+    background: #fff url(../images/icon_sns2/icon_set_sns_01.png) no-repeat;
+    width: 25px; height: 25px;
+    display: inline-block;
+    text-indent: -9999px; /*화면 밖으로 글자 내보내기(양수는 들여쓰기 음수는 내보내기)*/
+}
+footer .top .right a:nth-child(2) {
+    background: #fff url(../images/icon_sns2/icon_set_sns_02.png) no-repeat;
+    width: 25px; height: 25px;
+    display: inline-block;
+    text-indent: -9999px;
+}
+footer .top .right a:nth-child(3) {
+    background: #fff url(../images/icon_sns2/icon_set_sns_03.png) no-repeat;
+    width: 25px; height: 25px;
+    display: inline-block;
+    text-indent: -9999px;
+}
+footer .top .right a:nth-child(4) {
+    background: #fff url(../images/icon_sns2/icon_set_sns_04.png) no-repeat;
+    width: 25px; height: 25px;
+    display: inline-block;
+    text-indent: -9999px;
+}
+footer .top .right a:nth-child(5) {
+    background: #fff url(../images/icon_sns2/icon_set_sns_05.png) no-repeat;
+    width: 25px; height: 25px;
+    display: inline-block;
+    text-indent: -9999px;
+}
+footer .top .right a:nth-child(6) {
+    background: #fff url(../images/icon_sns2/icon_set_sns_06.png) no-repeat;
+    width: 25px; height: 25px;
+    display: inline-block;
+    text-indent: -9999px;
+    margin-right: 0;
+}
+/* footer-f btm */
+footer .btm {}
+footer .btm .left {float: left;}
+footer .btm .left p {}
+footer .btm .left p img {}
+footer .btm .left address {}
+footer .btm .left address a {}
+footer .btm .right {text-align: right;}
+footer .btm .right a {}
+footer .btm .right a img {}
