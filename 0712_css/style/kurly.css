@@ -1,0 +1,101 @@
+/* rgb(95 3 128) */
+/* 1050px */
+/* all layout */
+.top_bn_bg .top_bnr,
+header {
+    background-color: yellow;
+    margin: 0 auto; width: 1050px;
+}
+/* header-sprite 그룹선택자 */
+header .middle .logo h1,
+header .middle #searchfrm fieldset #search_btn,
+header .middle .lnb a,
+header .middle .menu_btm .all_nav .menu
+{   
+    background: plum url(../image/kurly_img/icon_set.png);
+    display: inline-block;
+    width: 36px; height: 36px;
+    text-indent: -9999px;
+}
+/* header */
+.top_bn_bg {background: rgb(95 3 128);}
+.top_bn_bg .top_bnr {
+    height: 42px;
+    display:flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* 부모의 현재 위치를 기준으로 다시 relative*/
+}
+.top_bn_bg .top_bnr .adver {}
+.top_bn_bg .top_bnr .close {
+    position: absolute; right: 0;
+}
+.top_bn_bg .top_bnr .close .faxmark {}
+header {}
+header .user_lnb {
+    height: 35px; display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: cneter;
+}
+header .user_lnb a {}
+header .user_lnb .join {}
+header .user_lnb .login {}
+header .user_lnb .customer_service {}
+header .middle {
+    height: 63px; display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+header .middle .logo {
+    display: flex; flex-flow: row nowrap;
+}
+header .middle .logo h1 {}
+header .middle .logo h1 .market {}
+header .middle .logo h1 .beauty {}
+header .middle #searchfrm {
+    border: 2px solid rgb(95 3 128);
+    border-radius: 5px; width: 350px;
+}
+header .middle #searchfrm fieldset {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+header .middle #searchfrm fieldset #search_txt {
+}
+header .middle #searchfrm fieldset #search_btn {}
+header .middle .lnb {
+    display: inline-block;
+}
+header .middle .lnb a {}
+header .middle .lnb .map {
+    background-position: 0 -86px;
+}
+header .middle .lnb .like {
+    background-position: 0 -50px;
+}
+header .middle .lnb .cart {
+    background-position: 0 -14px;
+}
+header .middle .menu_btm {
+    height: 56px; display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+header .middle .menu_btm .all_nav {}
+header .middle .menu_btm .all_nav .menu {
+    background-position: 0 0;
+}
+header .middle .menu_btm .all_nav span {}
+header .middle .menu_btm nav {}
+header .middle .menu_btm nav a {}
+header .middle .menu_btm .delivery_info {}
+header .middle .menu_btm .delivery_info em {}
+header .middle .menu_btm .delivery_info em .fa-circle {
+    font-size: 1px;
+}
+header .middle .menu_btm .delivery_info span {}

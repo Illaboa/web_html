@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/reset.css">
+    <style>
+        .bg1 { 
+            background: linear-gradient(-60deg,skyblue,yellow,yellowgreen,green);
+            /* background: radial-gradient(circle,skyblue,yellow,yellowgreen,green); */
+        }
+        .bg2 {
+            background: linear-gradient(90deg, rgba(6,0,36,1) 0%, rgba(9,121,112,1) 35%, rgba(0,212,255,1) 100%);
+        }
+        .bg3 {}
+        .bg4 {
+            background: url(https://picsum.photos/id/20/1920);
+        }
+        .bg4 .gra {
+            background: rgb(0,255,220);
+            background: linear-gradient(90deg, rgba(0,255,220,1) 0%, rgba(255,255,255,0) 100%);
+        }
+    </style>
+</head>
+<body>
+    <!-- 포토샵, 일러스트레이터로 gradient 만들 때 = 정적인 색상 -->
+    <!-- CSS로 gradient 만들 때 = 동적 생상 (애니메이션) -->
+    <!-- gradient animation CSS -->
+    <div class="bg1"></div>
+    <div class="bg2"></div>
+    <div class="bg3"></div>
+    <div class="bg4">
+        <div class="gra"></div>
+    </div>
+</body>
+</html>
